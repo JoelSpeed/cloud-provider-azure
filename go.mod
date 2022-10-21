@@ -3,34 +3,34 @@ module sigs.k8s.io/cloud-provider-azure
 go 1.18
 
 require (
-	github.com/Azure/azure-sdk-for-go v66.0.0+incompatible
+	github.com/Azure/azure-sdk-for-go v67.0.0+incompatible
 	github.com/Azure/go-autorest/autorest v0.11.28
 	github.com/Azure/go-autorest/autorest/adal v0.9.21
 	github.com/Azure/go-autorest/autorest/mocks v0.4.2
 	github.com/Azure/go-autorest/autorest/to v0.4.0
 	github.com/Azure/go-autorest/tracing v0.6.0
 	github.com/evanphx/json-patch v5.6.0+incompatible
-	github.com/fsnotify/fsnotify v1.5.4
+	github.com/fsnotify/fsnotify v1.6.0
 	github.com/go-logr/logr v1.2.3
 	github.com/golang/mock v1.6.0
-	github.com/onsi/ginkgo/v2 v2.2.0
-	github.com/onsi/gomega v1.20.2
-	github.com/spf13/cobra v1.5.0
+	github.com/onsi/ginkgo/v2 v2.3.0
+	github.com/onsi/gomega v1.22.1
+	github.com/spf13/cobra v1.6.0
 	github.com/spf13/pflag v1.0.5
 	github.com/stretchr/testify v1.8.0
 	golang.org/x/crypto v0.0.0-20220722155217-630584e8d5aa
-	golang.org/x/sys v0.0.0-20220728004956-3c1f35247d10
-	golang.org/x/text v0.3.7
-	k8s.io/api v0.25.2
-	k8s.io/apimachinery v0.25.2
-	k8s.io/apiserver v0.25.2
-	k8s.io/client-go v0.25.2
-	k8s.io/cloud-provider v0.25.2
-	k8s.io/component-base v0.25.2
-	k8s.io/component-helpers v0.25.2
-	k8s.io/controller-manager v0.25.2
+	golang.org/x/sys v0.0.0-20220908164124-27713097b956
+	golang.org/x/text v0.4.0
+	k8s.io/api v0.25.3
+	k8s.io/apimachinery v0.25.3
+	k8s.io/apiserver v0.25.3
+	k8s.io/client-go v0.25.3
+	k8s.io/cloud-provider v0.25.3
+	k8s.io/component-base v0.25.3
+	k8s.io/component-helpers v0.25.3
+	k8s.io/controller-manager v0.25.3
 	k8s.io/klog/v2 v2.80.1
-	k8s.io/kubelet v0.25.2
+	k8s.io/kubelet v0.25.3
 	k8s.io/utils v0.0.0-20220728103510-ee6ede2d64ed
 	sigs.k8s.io/yaml v1.3.0
 )
@@ -66,7 +66,7 @@ require (
 	github.com/grpc-ecosystem/go-grpc-prometheus v1.2.0 // indirect
 	github.com/grpc-ecosystem/grpc-gateway v1.16.0 // indirect
 	github.com/imdario/mergo v0.3.6 // indirect
-	github.com/inconshreveable/mousetrap v1.0.0 // indirect
+	github.com/inconshreveable/mousetrap v1.0.1 // indirect
 	github.com/josharian/intern v1.0.0 // indirect
 	github.com/json-iterator/go v1.1.12 // indirect
 	github.com/mailru/easyjson v0.7.6 // indirect
@@ -116,7 +116,3 @@ require (
 	sigs.k8s.io/json v0.0.0-20220713155537-f223a00ba0e2 // indirect
 	sigs.k8s.io/structured-merge-diff/v4 v4.2.3 // indirect
 )
-
-// https://github.com/kubernetes/kubernetes/issues/112793
-// Remove after k8s.io/cloud-provider v0.25.3 will be released, updated upstream and rebased.
-replace k8s.io/cloud-provider v0.25.2 => github.com/openshift/kubernetes-cloud-provider v0.0.0-20221007081959-e07817829a38
